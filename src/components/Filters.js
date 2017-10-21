@@ -4,15 +4,19 @@ class Filters extends React.Component {
   constructor() {
     super();
 
-    this.handleFilterTypeChange = this.handleFilterTypeChange.bind(this);
+    this.handleTypeChange = this.handleTypeChange.bind(this);
   }
 
+  handleTypeChange( event ) {
+    
+  }
+  
   render() {
     return (
       <div className="ui form">
         <h3>Animal type</h3>
         <div className="field">
-          <select name="type" id="type">
+          <select name="type" id="type" value={this.props.filters.type} onChange={this.handleTypeChange}>
             <option value="all">All</option>
             <option value="cat">Cats</option>
             <option value="dog">Dogs</option>
@@ -29,3 +33,4 @@ class Filters extends React.Component {
 }
 
 export default Filters;
+
