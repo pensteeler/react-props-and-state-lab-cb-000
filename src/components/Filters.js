@@ -1,8 +1,8 @@
 import React from 'react';
 
 class Filters extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.handleTypeChange = this.handleTypeChange.bind(this);
   }
@@ -11,6 +11,10 @@ class Filters extends React.Component {
 
   }
 
+  handleFindPetsClick() {
+    this.props.onFindPetsClick()
+  }
+  
   render() {
     return (
       <div className="ui form">
