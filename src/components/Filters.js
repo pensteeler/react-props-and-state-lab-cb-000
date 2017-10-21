@@ -3,6 +3,8 @@ import React from 'react';
 class Filters extends React.Component {
   constructor() {
     super();
+
+    this.handleFilterTypeChange = this.handleFilterTypeChange.bind(this);
   }
 
   render() {
