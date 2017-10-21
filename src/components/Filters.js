@@ -11,9 +11,9 @@ class Filters extends React.Component {
 
   }
 
-  handleFindPetsClick() {
-    this.props.onFindPetsClick()
-  }
+//  handleFindPetsClick() {
+//    this.props.onFindPetsClick()
+//  }
 
   render() {
     return (
@@ -29,7 +29,7 @@ class Filters extends React.Component {
         </div>
 
         <div className="field">
-          <button className="ui secondary button" onClick={this.handleFindPetsClick}>Find pets</button>
+          <button className="ui secondary button" onClick={this.props.onFindPetsClick}>Find pets</button>
         </div>
       </div>
     );
