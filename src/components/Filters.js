@@ -8,9 +8,9 @@ class Filters extends React.Component {
   }
 
   handleTypeChange( event ) {
-    
+
   }
-  
+
   render() {
     return (
       <div className="ui form">
@@ -33,4 +33,3 @@ class Filters extends React.Component {
 }
 
 export default Filters;
-
