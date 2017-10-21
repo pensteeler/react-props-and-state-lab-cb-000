@@ -25,7 +25,7 @@ class App extends React.Component {
         <div className="ui container">
           <div className="ui grid">
             <div className="four wide column">
-              <Filters />
+              <Filters  filters={this.state.filters} onChangeType={this.changeType} onFindPetsClick={this.find}/>
             </div>
             <div className="twelve wide column">
               <PetBrowser />
