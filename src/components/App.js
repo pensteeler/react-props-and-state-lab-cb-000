@@ -31,8 +31,8 @@ class App extends React.Component {
 
   }
 
-  handleAdoptPet() {
-
+  handleAdoptPet( petId ) {
+    this.setState( {adoptedPets: [...this.state.adoptedPets, petId]} );
   }
 
   render() {
