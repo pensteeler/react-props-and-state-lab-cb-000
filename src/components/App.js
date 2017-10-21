@@ -18,7 +18,7 @@ class App extends React.Component {
     this.handleChangeType = this.handleChangeType.bind(this);
     this.handleFindPetsClick = this.handleFindPetsClick.bind(this);
     this.handleAdoptPet = this.handleAdoptPet.bind(this);
-    
+
   }
 
   handleChangeType() {
@@ -28,13 +28,13 @@ class App extends React.Component {
   handleFindPetsClick() {
     let url = '/api/pets';
 
-    
+
   }
 
   handleAdoptPet() {
-    
+
   }
-  
+
   render() {
     return (
       <div className="ui container">
