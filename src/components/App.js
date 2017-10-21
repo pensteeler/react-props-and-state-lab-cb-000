@@ -21,7 +21,7 @@ class App extends React.Component {
 
   }
 
-  handleChangeType() {
+  handleChangeType( type ) {
     this.setState( {filters: {type: type}} );
   }
 
