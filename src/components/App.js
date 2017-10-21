@@ -28,7 +28,11 @@ class App extends React.Component {
   handleFindPetsClick() {
     let url = '/api/pets';
 
+    if( this.state.filters.type != 'all' ) {
+      url += `?type=${this.state.filters.type}`;
+    }
 
+    fetch( url ).then( function(pets) { this.setState( {pets} )} );
   }
 
   handleAdoptPet( petId ) {
